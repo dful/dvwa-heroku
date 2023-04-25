@@ -12,6 +12,7 @@ $_DVWA[ 'db_server' ]   = $dbparts['host'];
 $_DVWA[ 'db_database' ] = ltrim($dbparts['path'],'/');
 $_DVWA[ 'db_user' ]     = $dbparts['user'];
 $_DVWA[ 'db_password' ] = $dbparts['pass'];
+$_DVWA[ 'db_port'] = '3306';
 
 
 # Default security level
