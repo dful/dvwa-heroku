@@ -28,4 +28,13 @@ $_DVWA[ 'default_phpids_level' ] = 'disabled';
 #   Enabling this will show why the WAF blocked the request on the blocked request.
 #   The default is 'disabled'. You can set this to be either 'true' or 'false'.
 $_DVWA[ 'default_phpids_verbose' ] = 'false';
+
+define ("MYSQL", "mysql");
+define ("SQLITE", "sqlite");
+
+# SQLi DB Backend
+#   Use this to switch the backend database used in the SQLi and Blind SQLi labs.
+#   This does not affect the backend for any other services, just these two labs.
+#   If you do not understand what this means, do not change it.
+$_DVWA["SQLI_DB"] = MYSQL;
 ?>
